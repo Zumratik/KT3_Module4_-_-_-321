@@ -40,6 +40,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button x:Name="AddButton" Click="AddButton_Click" Grid.Row="4" Background="#FF498C51" Content="Изменить"/>
+        <Button x:Name="AddButton" Click="AddButton_Click" Grid.Row="4" Background="#FF498C51" Content="Добавить"/>
     </Grid>
 </Page>

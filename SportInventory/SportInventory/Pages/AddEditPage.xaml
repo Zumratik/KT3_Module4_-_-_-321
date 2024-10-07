@@ -9,6 +9,48 @@
       Title="AddEditPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="Id" Grid.Column="0" Grid.Row="0"></Label>
+        <Label Content="Имя" Grid.Column="0" Grid.Row="1"></Label>
+        <Label Content="Фамилия" Grid.Column="0" Grid.Row="2"></Label>
+        <Label Content="Отчество" Grid.Column="0" Grid.Row="3"></Label>
+        <Label Content="Должность" Grid.Column="0" Grid.Row="4"></Label>
+        <Label Content="Дата рождения" Grid.Column="0" Grid.Row="5"></Label>
+        <Label Content="Телефон" Grid.Column="2" Grid.Row="0"></Label>
+        <Label Content="Пол" Grid.Column="2" Grid.Row="1"></Label>
+        <Label Content="Почта" Grid.Column="2" Grid.Row="2"></Label>
+        <Label Content="Логин" Grid.Column="2" Grid.Row="3"></Label>
+        <Label Content="Пароль" Grid.Column="2" Grid.Row="4"></Label>
+        <Label Content="Подтверждение пароля" Grid.Column="2" Grid.Row="5"></Label>
+
+        <TextBlock x:Name="IdTextBlock" Grid.Column="1" Grid.Row="0"></TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="1" x:Name="NameTextBox"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="2" x:Name="SurnameTextBox"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="3" x:Name="PatronimicTextBox"></TextBox>
+        <ComboBox Grid.Column="1" Grid.Row="4" x:Name="RoleComboBox"  DisplayMemberPath="Name"></ComboBox>
+        <TextBox Grid.Column="1" Grid.Row="5" x:Name="DateBerthTextBox"></TextBox>
+        <TextBox Grid.Column="3" Grid.Row="0" x:Name="TelephoneTextBox"></TextBox>
+        <ComboBox Grid.Column="3" Grid.Row="1" x:Name="GenderComboBox" DisplayMemberPath="Name"></ComboBox>
+        <TextBox Grid.Column="3" Grid.Row="2" x:Name="EmailTextBox"></TextBox>
+        <TextBox Grid.Column="3" Grid.Row="3" x:Name="LoginTextBox"></TextBox>
+        <TextBox Grid.Column="3" Grid.Row="4" x:Name="PasswordTextBox"></TextBox>
+        <TextBox Grid.Column="3" Grid.Row="5" x:Name="Password2TextBox"></TextBox>
+       
+        <Button Grid.Row="6" Grid.Column="1" Content="Сохранить" x:Name="SaveButton" Click="SaveButton_Click"></Button>
+        <Button Grid.Row="6" Grid.Column="4" Content="Назад" x:Name="BackButton" Click="BackButton_Click"></Button>
     </Grid>
 </Page>
